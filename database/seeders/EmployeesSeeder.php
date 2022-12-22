@@ -13,13 +13,13 @@ class EmployeesSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('employees')->insert([
-            'name' => Str::random(10),
-            'surname' => Str::random(10),
-            'patronymic' => Str::random(10),
-            'phone_number' => Str::random(10),
-            'passport' => Str::random(10),
-            'job' => 10,
+        \DB::table('employees')->insert([
+            'name' => "Nikita",
+            'surname' => "Shabanov",
+            'patronymic' => "Sergeevich",
+            'phone_number' => "89991231212",
+            'passport' => "Russian Federation",
+            'job' => 1,
             'salary' => 100000,
         ]);
     }
