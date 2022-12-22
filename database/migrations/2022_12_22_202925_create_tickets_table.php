@@ -21,6 +21,12 @@ class CreateTicketsTable extends Migration
             $table->foreignId('event_id');
             $table->foreignId('user_id');
             $table->foreignId('payment_status');
+            $table->foreign('payment_status')
+            ->references('id')
+            ->on('payment_statuses')
+            ->onDelete('cascade');
+
+
             $table->timestamps();
         });
     }
