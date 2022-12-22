@@ -14,13 +14,13 @@ class EmployeesSeeder extends Seeder
     public function run()
     {
         \DB::table('employees')->insert([
-            'name' => "Nikita",
-            'surname' => "Shabanov",
-            'patronymic' => "Sergeevich",
-            'phone_number' => "89991231212",
-            'passport' => "Russian Federation",
+            'name' => "Никита",
+            'surname' => "Шабанов",
+            'patronymic' => "Сергеевич",
+            'phone_number' => "89367772146",
+            'passport' => "20 44 162250",
             'job' => 1,
-            'salary' => 100000,
+            'salary' => 1000000,
         ]);
     }
 }

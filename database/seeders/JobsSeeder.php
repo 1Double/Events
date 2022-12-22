@@ -14,7 +14,7 @@ class JobsSeeder extends Seeder
     public function run()
     {
         \DB::table('jobs')->insert([
-            'name' => "Генеральный Директор",
+            'name' => "Директор",
         ]);
         \DB::table('jobs')->insert([
             'name' => "Бухгалтер",

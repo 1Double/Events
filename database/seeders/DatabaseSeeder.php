@@ -17,8 +17,9 @@ class DatabaseSeeder extends Seeder
         $this->call([
             JobsSeeder::class,
             EmployeesSeeder::class,
-            
-           
+            EventSeeder::class,
+            TicketSeeder::class,
+            MusicianSeeder::class,
         ]);
     }
 }
