@@ -15,11 +15,20 @@ class DatabaseSeeder extends Seeder
     {
         \App\Models\User::factory(10)->create();
         $this->call([
+            EventSeeder::class,
+            MusicianSeeder::class,
+        
+            
+            
+            //Foreign keys
+            PaymentStatusSeeder::class,
+            TicketSeeder::class,
+
             JobsSeeder::class,
             EmployeesSeeder::class,
-            EventSeeder::class,
-            TicketSeeder::class,
-            MusicianSeeder::class,
+
+            DrinkCatSeeder::class,
+            DrinkSeeder::class,
         ]);
     }
 }
