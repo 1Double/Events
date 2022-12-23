@@ -18,7 +18,7 @@ class TicketSeeder extends Seeder
             'event_date' => "2022-12-25",
             'price' => 7000,
             'event_id' => 1,
-            'user_id' => 3,
+            'user_id' => 1,
             'payment_status' => 1,
         ]);
     }

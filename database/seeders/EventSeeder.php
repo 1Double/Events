@@ -17,9 +17,10 @@ class EventSeeder extends Seeder
             'name' => "Дискотека 90-х",
             'date' => "2022-12-28",
             'tickets' => 150,
-            'performers' => "1",
-            'equipments' => "11",
-            'staff' => "111",
+            'performers' => 1,
+            'equipments' => 1,
+            'staff' => 1,
+            'event_cat_id' => 1,
         ]);
     }
 }

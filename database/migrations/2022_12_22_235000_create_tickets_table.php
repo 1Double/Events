@@ -18,8 +18,19 @@ class CreateTicketsTable extends Migration
             $table->string('place');
             $table->date('event_date');
             $table->integer('price');
+            
             $table->foreignId('event_id');
+            $table->foreign('event_id')
+            ->references('id')
+            ->on('events')
+            ->onDelete('cascade');
+
             $table->foreignId('user_id');
+            $table->foreign('user_id')
+            ->references('id')
+            ->on('participants')
+            ->onDelete('cascade');
+
             $table->foreignId('payment_status');
             $table->foreign('payment_status')
             ->references('id')
