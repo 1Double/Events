@@ -18,9 +18,11 @@ class CreateEventsTable extends Migration
             $table->string('name');
             $table->date('date');
             $table->integer('tickets');
-            $table->foreignId('performers');
-            $table->foreignId('equipments');
-            $table->foreignId('staff');
+            
+            //$table->foreignId('performers');
+            //$table->foreignId('equipments');
+            //$table->foreignId('staff');
+
             $table->foreignId('event_cat_id');
             $table->foreign('event_cat_id')
             ->references('id')

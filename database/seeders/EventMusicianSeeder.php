@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
-class EquipmentSeeder extends Seeder
+class EventMusicianSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -13,10 +13,9 @@ class EquipmentSeeder extends Seeder
      */
     public function run()
     {
-        \DB::table('equipment')->insert([
-            'name' => "Yamaha H801",
-            'status' => "Свободен",
-            'equipment_cat_id' => 1,
+        \DB::table('event_musicians')->insert([
+            "event_id" => 1,
+            "musician_id" => 1,
         ]);
     }
 }

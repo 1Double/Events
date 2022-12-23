@@ -34,6 +34,9 @@ class DatabaseSeeder extends Seeder
 
             DrinkCatSeeder::class,
             DrinkSeeder::class,
+            EventMusicianSeeder::class,
+            EventEquipmentSeeder::class,
+            EventEmployeeSeeder::class,
         ]);
     }
 }
